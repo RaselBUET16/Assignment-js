@@ -5,12 +5,12 @@ function kilometerToMeter(km) {
 }
 
 function budgetCalculation(watch, phone, laptop) {
-    if (watch < -1 || watch != Math.round(watch))
+    if (watch < 0 || watch != Math.round(watch))
         return "watch count can't be negative or fraction";
 
-    if (phone < -1 || phone != Math.round(phone))
+    if (phone < 0 || phone != Math.round(phone))
         return "phone count cant be negative or fraction";
-    if (laptop < -1 || laptop != Math.round(laptop))
+    if (laptop < 0 || laptop != Math.round(laptop))
         return "laptop count can't be negative or fraction";
 
     return (watch * 50) + (phone * 100) + (laptop * 500);
